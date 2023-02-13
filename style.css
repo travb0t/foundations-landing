@@ -1,0 +1,135 @@
+*  {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.header {
+    background-color: #1f2937;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 80px;
+}
+
+.nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+/* .banner {
+
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+/* .featured {
+
+} */
+
+/* Handles the quote segment */
+
+.quotecontainer {
+    display: flex;
+    background-color: #E5E7EB;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 150px;
+    max-height: 300px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+}
+
+.quote p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote label {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+/* Handles the enroll segment */
+
+.enroll {
+    display: flex;
+    justify-content: center;
+}
+
+.enrollbox {
+    margin: 50px 50px;
+    background-color: #3882F6;
+    padding: 20px 60px;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 550px;
+    border-radius: 10px;
+    
+}
+
+.enrollbox div {
+    flex: 3 1 auto;
+    color: white;
+}
+
+.enrollbox p {
+    margin: 0;
+    padding: 0;
+}
+
+.enroll strong {
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+.enrollbox button {
+    flex: 1 0 auto;
+    padding: 3px 15px;
+    color: white;
+    background-color: #3882F6;
+    border: solid white 1px;
+    border-radius:5px;
+}
+
+/* Handles the footer */
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    flex: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}

@@ -7,8 +7,10 @@ body {
     flex-direction: column;
     margin: 0;
     justify-content: flex-end;
-    height: 100vh;
+    /* height: 100vh; */
 }
+
+/* Handles header segment. */
 
 .header {
     background-color: #1f2937;
@@ -17,6 +19,8 @@ body {
     flex-direction: column;
     padding: 20px 80px;
 }
+
+/* Handles upper header. */
 
 .nav ul {
     display: flex;
@@ -36,9 +40,49 @@ body {
     margin-right: auto;
 }
 
-/* .banner {
+/* Handles lower header. */
 
-} */
+.banner {
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 300px;
+}
+
+.main p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.main .maintitle {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+button {
+    flex: 1 0 auto;
+    padding: 3px 15px;
+    color: white;
+    background-color: #3882F6;
+    border-radius:5px;
+    border: none;
+}
+
+.banner img {
+    max-width: 300px;
+}
+
+/* Handles whole content section. */
 
 .content {
     display: flex;
@@ -46,9 +90,47 @@ body {
     flex: 1 1 auto;
 }
 
-/* .featured {
+/* Handles featured segment. */
 
-} */
+.featured {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 25px;
+    gap: 15px;
+}
+
+.images {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+    /* flex-wrap: wrap; */
+}
+
+.images img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 10px;
+    border: #3882F6 solid 2px;
+    margin-bottom: 8px;
+}
+
+.images div {
+    flex: 3 1 auto;
+}
+
+.featured .featuredtitle {
+    font-size: 24px;
+    font-weight: 1000;
+}
+
+.featured .images p {
+    text-align: center;
+    font-size: 14px;
+    max-width: 100px;
+    margin: 0px;
+}
 
 /* Handles the quote segment */
 
@@ -114,13 +196,8 @@ body {
     font-size: 18px;
 }
 
-.enrollbox button {
-    flex: 1 0 auto;
-    padding: 3px 15px;
-    color: white;
-    background-color: #3882F6;
+.enroll button {
     border: solid white 1px;
-    border-radius:5px;
 }
 
 /* Handles the footer */

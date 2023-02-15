@@ -51,6 +51,11 @@ body {
     color: #F9FAF8;
 }
 
+.nav .logo span,
+.main .maintitle span {
+    color: red;
+}
+
 /* Handles lower header. */
 
 .banner {
@@ -136,8 +141,7 @@ button {
     gap: 50px;
     margin-bottom: 60px;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
 .images img {

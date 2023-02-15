@@ -6,18 +6,23 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    justify-content: flex-end;
     /* height: 100vh; */
 }
 
 /* Handles header segment. */
 
-.header {
+.headcontainer {
+    display: flex;
+    justify-content: center;
     background-color: #1f2937;
     flex: none;
+    padding: 20px 60px;
+}
+
+.header {
     display: flex;
     flex-direction: column;
-    padding: 20px 80px;
+    max-width: 1000px;
 }
 
 /* Handles upper header. */
@@ -28,16 +33,19 @@ body {
     padding: 0;
     list-style-type: none;
     justify-content: flex-start;
+    align-items: baseline;
     gap: 15px;
 }
 
 .nav a {
     text-decoration: none;
-    color: white;
+    color: #E5E7EB;
 }
 
-.logo {
+.header .nav .logo {
     margin-right: auto;
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 /* Handles lower header. */
@@ -55,23 +63,25 @@ body {
     flex-direction: column;
     color: white;
     align-items: flex-start;
-    gap: 8px;
-    max-width: 300px;
+    gap: 12px;
+    flex: 1 1 auto;
 }
 
 .main p {
     margin: 0px;
-    font-size: 14px;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .main .maintitle {
-    font-size: 24px;
-    font-weight: bolder;
+    font-size: 48px;
+    font-weight: 1000;
+    color: #F9FAF8;
 }
 
 button {
     flex: 1 0 auto;
-    padding: 3px 15px;
+    padding: 8px 24px;
     color: white;
     background-color: #3882F6;
     border-radius:5px;
@@ -79,7 +89,9 @@ button {
 }
 
 .banner img {
-    max-width: 300px;
+    width: 100%;
+    border: #3882F6 solid 2px;
+    border-radius: 5px;
 }
 
 /* Handles whole content section. */
@@ -121,13 +133,13 @@ button {
 }
 
 .featured .featuredtitle {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 1000;
+    color: #1F2937;
 }
 
 .featured .images p {
     text-align: center;
-    font-size: 14px;
     max-width: 100px;
     margin: 0px;
 }
@@ -151,7 +163,7 @@ button {
 }
 
 .quote p {
-    font-size: 20px;
+    font-size: 36px;
     font-weight: lighter;
     font-style: italic;
 }

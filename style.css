@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 *  {
     box-sizing: border-box;
 }
@@ -7,6 +9,7 @@ body {
     flex-direction: column;
     margin: 0;
     min-width: 550px;
+    font-family: "Roboto", sans-serif;
 }
 
 /* Handles header segment. */
@@ -58,9 +61,12 @@ body {
     gap: 50px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .banner {
         flex-wrap: wrap;
+    }
+    .main {
+        order: 2;
     }
 }
 
